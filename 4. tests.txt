@@ -1,0 +1,130 @@
+------------------------------------------
+------------------------------------------
+
+SI condition
+ALORS
+    bloc d'instructions
+SINON
+    bloc d'instructions
+FIN SI
+
+
+------------------------------------------
+------------------------------------------
+
+ALGORITHME exercice1
+
+VARIABLE
+    avoirClef <-- Boolean
+
+DEBUT
+    avoirClef <-- faux
+
+    avancer
+    tournerDroite
+    avancer
+        avoirClef = vrai
+    tournerGauche
+    tournerGauche
+    avancer
+    tournerDroite
+    avancer
+    SI avoirClef <-- vrai
+    ALORS
+        avancer
+    SINON
+        AFFICHER "J'ai oublié la clef"
+    FIN SI
+
+    
+------------------------------------------
+------------------------------------------
+
+ALGORITHME exercice2
+
+VARIABLE
+    age <-- Entier
+
+DEBUT
+    age <-- ageDuPersonnage (imaginons l'âge que l'on veut)
+
+    SI age > 20
+    ALORS
+        avancer
+    SINON
+        AFFICHER "Je suis trop jeune"
+    FIN SI
+
+        SI age > 28
+    ALORS
+        avancer
+    SINON
+        AFFICHER "Je suis trop jeune"
+    FIN SI
+
+------------------------------------------
+------------------------------------------
+
+
+------------------------------------------
+------------------------------------------
+                ET   OU
+------------------------------------------
+------------------------------------------
+
+SI condition ET condition
+ALORS
+    bloc d'instructions
+SINON
+    bloc d'instructions
+FIN SI
+
+------------------------------------------
+------------------------------------------
+
+SI condition OU condition
+ALORS
+    bloc d'instructions
+SINON
+    bloc d'instructions
+FIN SI
+
+------------------------------------------
+------------------------------------------
+
+ALGORITHME exercice1
+
+VARIABLE
+    grandMilo <-- Boolean
+    touchePiege <-- Boolean
+
+
+DEBUT
+    grandMilo <-- vrai
+    touchePiege <-- faux
+
+    SI grandMilo = vrai ET touchePiege = vrai
+    ALORS
+        grandMilo = faux
+        AFFICHER 'Aïe'
+    SINON
+        AFFICHER 'Ouille'
+    FIN SI
+
+    avancer
+        touchePiege = vrai
+
+    tournerGauche
+    avancer
+        grandMilo = vrai
+
+    tournerGauche
+    avancer
+        touchePiege
+
+    tournerDroite
+    avancer
+        touchePiege
+
+    tournerGauche
+    avancer

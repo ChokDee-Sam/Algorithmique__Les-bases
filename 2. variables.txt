@@ -1,0 +1,37 @@
+------------------------------------------
+------------------------------------------
+
+Déclaration = la variable existe
+Initialisation = lui donner une PREMIERE valeur
+Assignation = lui donner une valeur
+<---
+
+------------------------------------------
+------------------------------------------
+
+ALGORITHME exercice2
+
+VARIABLE
+    coeur <-- 1
+    score <-- 0
+
+DEBUT
+    avancer
+        coeur <-- 2
+    tournerGauche
+    tournerGauche
+    avancer
+    tournerDroite
+    avancer
+        score <-- +10
+    tournerDroite
+    avancer
+        score <-- +10
+    tournerGauche
+    tournerGauche
+    avancer
+    avancer
+FIN
+
+------------------------------------------
+------------------------------------------

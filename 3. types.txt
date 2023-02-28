@@ -1,0 +1,103 @@
+------------------------------------------
+------------------------------------------
+
+Entiers
+Chaines de caractères
+Booleans
+
+------------------------------------------
+------------------------------------------
+
+ALGORITHME exercice1
+
+VARIABLE
+    mot <-- chaines de caractères
+
+DEBUT
+
+    mot <-- ''
+
+    avancer
+        mot <-- mot + 'H'
+    avancer
+        mot <-- mot + 'E'
+    tournerDroite
+    avancer
+        mot <-- mot + 'L'
+    tournerGauche
+    avancer
+        mot <-- mot + 'L'
+    tournerGauche
+    avancer
+        mot <-- mot + '0'
+    tournerDroite
+    avancer
+
+FIN
+
+------------------------------------------
+------------------------------------------
+
+ALGORITHME exercice2
+
+VARIABLE
+    milo    <-- Boolean
+    piege   <-- Boolean
+
+
+DEBUT
+
+    grandMilo   <-- faux
+
+    tournerGauche 
+    avancer
+        grandMilo = vrai 
+    avancer
+    tournerDroite
+    avancer
+        grandMilo = faux
+    tournerDroite
+    avancer
+
+FIN
+
+------------------------------------------
+------------------------------------------
+
+ALGORITHME exercice3
+
+VARIABLE
+    grandMilo      <-- Boolean
+    score          <-- Entier
+    mot            <-- Chaine de caractères
+
+
+DEBUT
+    grandMilo      <-- vrai
+    score          <-- 0
+    mot            <-- ''
+
+    avancer
+    tournerGauche
+    avancer
+        grandMilo = faux
+    avancer
+        mot <-- mot + 'C'
+    avancer
+        grandMilo <-- vrai
+    tournerGauche
+    avancer
+        score <-- score +10
+    avancer
+        score <-- score +10
+    tournerGauche
+    avancer
+        mot <-- mot + 'C'
+    tournerGauche
+    avancer
+        grandMilo = faux
+    tournerDroite
+    avancer
+
+------------------------------------------
+------------------------------------------
